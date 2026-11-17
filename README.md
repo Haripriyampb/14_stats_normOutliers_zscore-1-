@@ -1,59 +1,92 @@
-# Experiment 16: Statistics and Probability Theory – Law of Large Numbers
+# Normal Distribution, Outliers, and Z-Score
 
 ## Overview
-This experiment focuses on understanding the **Law of Large Numbers (LLN)**, an important concept in probability theory and statistics. It explains how the average of observed results gets closer to the expected value as the number of independent trials increases.
-
-The experiment uses Python to demonstrate how repeated random experiments produce results that approach the theoretical probability over time.
+This project explores three important statistical concepts: **Normal Distribution, Outliers, and Z-Score**. It explains how data is distributed, how unusual values can be identified, and how Z-Scores help measure the distance of a data point from the mean.
 
 ## Objectives
-- To understand the concept of the Law of Large Numbers.
-- To explore the relationship between sample size and sample average.
-- To understand how repeated independent trials affect experimental outcomes.
-- To compare theoretical probability with experimental probability.
-- To demonstrate the Law of Large Numbers using Python.
+- Understand the concept of Normal Distribution.
+- Identify the characteristics of a bell-shaped curve.
+- Understand what outliers are and how they affect data.
+- Learn how to calculate and interpret Z-Scores.
+- Apply statistical techniques to analyze datasets using Python.
 
-## Tools and Technologies Used
-- **Programming Language:** Python
-- **Environment:** Jupyter Notebook
-- **Libraries:** NumPy, Matplotlib (if used in the notebook)
+## 1. Normal Distribution
+Normal Distribution is a continuous probability distribution in which most values are concentrated around the mean.
 
-## Concepts Covered
-- Probability Theory
-- Random Experiments
-- Independent Trials
-- Expected Value
-- Sample Mean
-- Theoretical and Experimental Probability
-- Law of Large Numbers
+### Characteristics
+- It has a bell-shaped curve.
+- Mean, Median, and Mode are equal.
+- It is symmetrical around the mean.
+- Most observations lie close to the mean.
 
-## Methodology
-1. Understand the theoretical concept of the Law of Large Numbers.
-2. Perform repeated random experiments using Python.
-3. Calculate the sample average after different numbers of trials.
-4. Observe how the sample average changes as the number of trials increases.
-5. Compare the experimental average with the theoretical expected value.
-6. Visualize the results to understand the convergence of the sample average.
+### Empirical Rule
+- 68% of data lies within 1 standard deviation.
+- 95% of data lies within 2 standard deviations.
+- 99.7% of data lies within 3 standard deviations.
 
-## Results and Outcomes
-The experiment demonstrates that as the number of independent trials increases, the sample average tends to approach the expected value. It helps illustrate the importance of large sample sizes in probability and statistical analysis.
+## 2. Outliers
+Outliers are data points that are significantly different from the other observations in a dataset.
 
-Through Python implementation, this experiment provides a practical understanding of the Law of Large Numbers and its applications in statistical analysis, data science, and machine learning.
+### Causes of Outliers
+- Measurement errors.
+- Data entry mistakes.
+- Unusual observations.
+- Natural variations in data.
+
+### Importance
+- Outliers can affect the mean and standard deviation.
+- They may influence statistical analysis.
+- Identifying them helps improve data quality.
+
+## 3. Z-Score
+A Z-Score measures how many standard deviations a data point is away from the mean.
+
+### Formula
+
+\[
+Z = \frac{X-\mu}{\sigma}
+\]
+
+Where:
+- X = Data point
+- μ = Mean
+- σ = Standard deviation
+
+### Interpretation
+- Z = 0: The value equals the mean.
+- Z = +1: One standard deviation above the mean.
+- Z = -1: One standard deviation below the mean.
+- Z greater than +3 or less than -3: A possible outlier under the common three-standard-deviation rule.
+
+## 4. Python Implementation
+Python libraries commonly used for this topic:
+
+- **NumPy** – Numerical calculations.
+- **Pandas** – Dataset handling.
+- **Matplotlib** – Data visualization.
+- **SciPy** – Statistical functions.
 
 ## Applications
-- Statistical sampling and analysis
-- Predicting long-term outcomes
-- Monte Carlo simulations
-- Data science and machine learning
-- Risk and probability estimation
+- Detecting unusual values in datasets.
+- Data preprocessing and cleaning.
+- Analyzing examination scores.
+- Financial data analysis.
+- Machine learning feature analysis.
 
-## How to Run
-1. Clone or download this repository.
-2. Open the `.ipynb` file using Jupyter Notebook or Google Colab.
-3. Execute the cells sequentially.
-4. Observe the output and visualizations.
+## Learning Outcomes
+After completing this project, I learned:
+- How normal distribution works.
+- How to identify outliers.
+- How to calculate and interpret Z-Scores.
+- How statistical concepts help in understanding real-world datasets.
+- How to use Python for statistical analysis.
 
-## Author
-**Haripriya M.P.**
+## Conclusion
+Normal Distribution, Outliers, and Z-Scores are essential concepts in statistics and data analysis. They help us understand data patterns, identify unusual observations, and prepare datasets for further analysis and machine learning applications.
 
-## Repository
-[GitHub – Experiment 16: Law of Large Numbers](https://github.com/Haripriyampb)
+## Technologies Used
+- Python
+- NumPy
+- Pandas
+- Matplotlib
+- SciPy
